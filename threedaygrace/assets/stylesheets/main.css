@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Oswald,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    
+}
+
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box{
+    box-sizing: border-box;
+}
+
+#header{
+    display: block;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url(../images/header_bg.jpeg);
+}
+
+.header_bar{
+/*    background-image: url(../images/header_bg.jpeg);*/
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom: 0.8px grey;
+    border-bottom-style: groove;
+}
+
+.header_bar:after{
+    content: "";
+    
+    
+}
+
+.bar_wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Oswald,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+.bar_wrapper ul{
+    list-style: none;
+}
+
+.bar_wrapper ul li{
+    display: inline-block;
+}
+
+.bar_wrapper a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    letter-spacing: -1.2px;
+    margin-right:2px; 
+    transition: 0.4s;
+}
+.bar_wrapper a:hover{
+    color: #5a787d;
+    background-color: transparent;
+    transition: 0.4s;
+}
+.main-nav ul li:first-child{
+   
+/*    padding-left: 5px;*/
+    padding: 5px;
+/*        background: url(../images/line.png);*/
+    background : url(../images/line.png)left bottom no-repeat; 
+}
+
+
+.main-nav ul li:first-child a{
+     color: #e2561c;
+
+
+}
+
+.main-nav{
+    float: left;
+}
+
+.sec-nav{
+    float: right;
+    padding: 5px;
+    word-spacing: -1px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.sec-nav a{
+    margin-left: 2px;
+    color:#e2561c #e2561c;
+    
+}
+.sec-nav ul li:first-child {
+    color: #5a787d;
+}
+
+.header_content{
+    display: block;
+    max-width: 985px;
+    margin: 4.7em auto 0px;
+    padding: 0px 10px;
+    color: white;
+        text-align: center;
+}
+
+.header_content a{
+    color: #e2561c;
+    text-decoration: none;
+}
+
+.drop{
+    width: 2%;
+    display: inline-block;
+/*    height: 5px;*/
+    margin-top: 2%;
+    display: none;
+    padding-top: 0px;
+}
+.drop hr{
+    border: white 1px solid;
+    margin-bottom: -4px;
+}
+
+.drop hr:last-child{
+    margin-bottom: 4px;
+    
+}
+
+@media(max-width:780px){
+    p{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:990px){
+    
+    .main-nav{
+        margin-left: -20px;
+
+    }
+    
+    .bar_wrapper{
+        height: 90px;
+    }
+    .sec-nav{
+        display: block;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .header_content{
+         margin: 5.7em auto 0px;
+    }    
+}
+
+
+
+
+@media(max-width:750px){
+    
+    .bar_wrapper{
+        background-image: url(../images/header_bg.jpeg); 
+        position: relative;
+        z-index: -12;
+       
+      }
+    .bar_wrapper:after{
+        content: "THREE DAYS GRACE";
+        color: white;
+        left: 0px;
+
+        top: 7%;
+        position: fixed;
+        z-index: -1000000;
+
+    }
+    
+    .drop{
+        display: block;
+        position: fixed;
+        right: 18px;
+        padding: 0px 5px 4px ;
+        width: 20px;
+        top: 20px;
+    }
+    .sec-nav ul li:first-child{
+        
+    }
+    .bar_wrapper ul li{
+        display: none;
+        z-index: 10;
+        line-height: 30px;
+        
+    }
+    
+    
+    .drop:hover{
+        background: #e2561c; 
+    }
+    
+    .drop:hover .bar_wrapper ul li{
+        display: block;
+    }
+    .bar_wrapper:hover ul li{
+        display: block;
+        z-index: 200;
+    }
+    .bar_wrapper:hover:after{
+        color: black;
+    }
+    
+    .sec-nav{
+        
+        clear: right;
+        position: static;
+        
+    }
+    
+}
